@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹앱 과제_박희진</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <h1>HJ SWEETS</h1>
+
+    <hr>
+
+    <div class="menu">
+        <h2>보기만 해도 황홀해지는 <i><span class="red">레드벨벳</span><span class="brown">마블브라우니</span></i></h2>
+
+        <h2>&lt; 레시피 리스트 &gt;</h2>
+        <div id="recipeFrom">
+            <input type="text" id="ingrdnt" placeholder="재료 입력하기">
+            <input type="text" id="qntty" placeholder="수량 입력하기">
+            <button type="button" onclick="addList();">+ 리스트 추가 +</button>
+            <button type="button" onclick="completeList();">리스트 작성!!</button>
+        </div>
+        
+        <p></p>
+
+        <div class="menuList">
+            <button onclick="checkList();">리스트 확인</button>
+            <div id="ingrdnt_list"><h3>재료 | 수량</h3></div>
+
+        </div>
+
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

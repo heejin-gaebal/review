@@ -1,0 +1,61 @@
+html,body{margin: 0;padding: 0;}
+button{cursor: pointer;}
+h1{
+    text-align: center;margin-top: 100px;
+    background: pink;color: #1b507e;
+    padding: 25px;font-size: 50px;
+}
+
+.menu{text-align: center;}
+.menu h2{text-align: center; margin-bottom: 50px;}
+.menu h2 span.red{color: rgb(212, 64, 64);}
+.menu h2 span.brown{color: brown;}
+
+#recipeFrom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#recipeFrom input{
+    display: inline-block; width: 200px; height: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px dashed #f57a90; border-radius: 5px;
+}
+#recipeFrom input:last-of-type{
+    margin-left: 10px;
+}
+#recipeFrom button{
+    width: 150px; height: 40px;
+    margin-left: 10px; padding: 10px;
+    box-sizing: border-box; line-height: 1.3;
+    background: aliceblue;
+    border-radius: 5px; border: 1px solid #2986d7;
+}
+
+.menuList button{
+    margin: 50px 0; width: 200px; height: 50px;
+    font-size: 20px; line-height: 1.3;
+    background: #1b507e; color: pink;
+    border-radius: 5px; border: 1px solid #1b507e;
+}
+
+#ingrdnt_list{
+    background: #fff1d2;
+    min-width: 500px; width: 500px;
+    margin: auto; padding: 30px;
+    box-sizing: border-box; border-radius: 10px;
+    position: relative;
+}
+#ingrdnt_list h3:first-child{
+    border-bottom: 1px dashed #f56d1e;
+    padding-bottom: 20px;
+}
+#ingrdnt_list::after{
+    display: block; content:"";
+    width: 100%; height: 100%;
+    background: gray;
+    position: absolute;
+    opacity: 0.3; border-radius: 10px;
+    left: 2%; top: 8%; z-index: -1;
+}
