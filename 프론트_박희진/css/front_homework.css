@@ -1,0 +1,172 @@
+body{margin: 0; padding: 0;}
+#wrap {margin: auto; position: relative;}
+#wrap.login{background: url(../images/bg01.png) no-repeat 100% 100%;height: 97vh;}
+
+#wrap h1{text-align: center;padding: 50px 0;margin: 0;}
+#wrap h1 .logo{width: 60px;}
+#wrap ul.lnb{list-style: none; position: absolute; right: 3%; top: 3%;
+    margin: 0; padding: 0; width: 200px;
+}
+#wrap ul.lnb li{display: inline-block; margin: 0 7%;}
+
+#wrap > .layout {width: 1000px;border: 5px solid #000;border-radius: 10px; margin: 70px auto;}
+.layout h2 {text-align: center;border-bottom: 2px solid #000;padding: 20px 0;color: #fff;margin: 0;background: #000;}
+
+.login_form {display: flex;justify-content: center;align-items: center;height: 350px;background: rgba(255,255,255,0.88);}
+.login_form ul {list-style: none;padding: 0 10px 0 0;}
+.login_form ul li.etc{text-align: right;}
+.login_form ul li.etc a{text-decoration: none; color: #000;}
+.login_form ul li.etc a:hover{border-bottom: 1px solid #000;}
+
+.login_form label {display: inline-block;width: 70px;font-weight: 600;font-size: 20px;vertical-align: text-top;}
+.login_form input {margin-bottom: 10px;width: 200px;height: 30px;}
+.login_form button.login {
+    width: 90px; height: 83px;
+    background: #000000; color: #fff;
+    border-radius: 3px; border: 0;
+    font-size: 17px; margin-top: -30px;
+}
+
+.forYou {display: flex;justify-content: center;align-items: center;margin-bottom: 50px;}
+
+.visual{
+    width: 100%;height: 600px;
+    background: url(../images/visual.png) no-repeat 50% 50%;background-size: cover;
+    margin-bottom: 100px;position: relative;}
+.visual a{
+    position: absolute; left: 50%; top: 70%; transform: translateX(-50%);
+    color: #fff; text-decoration: none;
+    transition: ease-in-out 0.3s; padding: 15px 30px;
+    background: #000; border: 1px solid #000;
+}
+.visual a:hover{background: #fff; color: #000;}
+
+.product_box .btn_top button{
+    width: 250px; height: 80px;
+    background: #fff; border: 1px solid #000;
+    font-size: 20px; font-weight: 600;
+}
+.product_box .btn_top button:last-child{border-left: 0;}
+.product_box .btn_top button.on{background: #000; color: #fff; border-radius: 0;}
+.product_box ul{list-style: none;padding: 20px 10px;border: 1px solid #000;border-top: 0;margin: 0;}
+.product_box li{margin-bottom: 10px; cursor: pointer; transition: ease-in-out 0.2s; border-bottom: 1px solid #fff;}
+.product_box li:hover{border-bottom: 1px solid #000;}
+.product_box li:last-child{margin-bottom:0;}
+.product_box li span{color: red;font-size: 14px;vertical-align: text-top;}
+.changeMent {text-align: center;margin:30px 0;}
+
+.sidebar{
+    max-width: 500px; background: #fff;
+    position: fixed; right: -323px; top: 50%;
+    transform: translateY(-50%);
+    transition: ease-in-out 0.5s;
+}
+.sidebar.open{right: 0;}
+.sidebar .filter{
+    display: inline-block; background: #000; color: #fff;
+    margin: 0; padding: 15px; border: 0; cursor: pointer;
+    position: absolute; left: -80px; top: 0;
+}
+
+.searchForm {padding: 20px;border: 1px solid #cdcdcd;}
+.searchForm p {text-align: center;}
+
+.colorForm{text-align: center;margin-bottom: 40px;}
+.colorForm ul{padding: 0; list-style: none;}
+.colorForm ul li{margin-bottom: 10px;}
+.colorForm ul li:last-child{margin-bottom: 0;}
+.colorForm label {display: inline-block;width: auto; vertical-align: inherit;}
+.colorForm input {
+    width: 30px;height: 30px;border: 0; caret-color: transparent;
+    border: 1px solid #c1c1c1;border-radius: 3px; cursor: pointer;
+}
+.colorForm input#red {background: red;}
+.colorForm input#orange {background: orange;}
+.colorForm input#yellow {background: yellow;}
+.colorForm input#beige {background: beige;}
+.colorForm input#brown {background: brown;}
+.colorForm input#pink {background: pink;}
+.colorForm input#violet {background: violet;}
+.colorForm input#gold {background: gold;}
+.colorForm input#silver {background: silver;}
+
+.palette_wrap span{
+    display: inline-block; width: 35px; height: 35px;
+    background: #fff;
+    border-radius: 50%; vertical-align: middle;
+    border: 1px solid #c1c1c1;
+}
+
+.cosmetics_wrap{width: 1200px; margin: auto auto 100px;}
+.cosmetics_wrap ul {
+    list-style: none; padding: 0; margin: 0;
+    display: flex; justify-content: space-between; align-items: center;
+}
+.cosmetics_wrap ul li:hover img{transform: scale(1.1);transition: ease-in-out 0.3s;}
+.cosmetics_wrap ul li a{display: inline-block;text-align: center;text-decoration: none;color: #000;}
+.cosmetics_wrap ul li a img{width: 300px;}
+.cosmetics_wrap ul li a p{margin: 0;}
+.cosmetics_wrap ul li a p:last-child{margin:10px 0;}
+.cosmetics_wrap ul li a + span{
+    display: block; margin: auto; text-align: center; cursor: pointer;
+    background: #000; color: #fff; border: 1px solid #000;
+    width: 100px; padding: 10px; transition: ease-in-out 0.2s;
+}
+.cosmetics_wrap ul li a + span:hover{
+    border: 1px solid #000; background: #fff; color: #000;
+}
+footer{
+    background: #000; color: #999; padding: 30px;
+    display: flex; justify-content: space-evenly; align-items: center;
+}
+footer p {font-size: 30px; font-weight: 600; letter-spacing: 2px;}
+footer .footer_info ul{padding: 0; margin: 0; list-style: none;}
+footer .footer_info ul li{margin-bottom: 10px;}
+
+/* cart.html */
+.cart_wrap{width: 1200px;margin: auto auto 100px;}
+.cart_wrap .cart_top{display: flex; justify-content: space-between; align-items: center;}
+.cart_wrap .cart_top a{text-decoration: none; color: #000; font-weight: 600;}
+
+table{width: 100%;border: 1px solid #dcdcdc;border-collapse: collapse; min-height: 440px;}
+table thead{font-size: 20px;}
+table th{
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-collapse: collapse;
+    background: #000; color: #fff;
+}
+table tbody tr{cursor: pointer;}
+table td{text-align: center; padding: 20px; border: 1px solid #dcdcdc;}
+table td button{
+    padding: 10px 14px; font-weight: 600; transition: ease-in-out 0.3s;
+    background: #000; color: #fff; border: 1px solid #000;
+    border-radius: 3px; cursor: pointer;
+}
+table td button:hover{background: #fff; color: #000; border: 1px solid #000;}
+
+/* 모달창 */
+#modal{
+    display: none; height: 90vh;
+    min-width: 700px;
+    overflow: scroll;
+    background: #fff;
+    position: fixed;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    text-align: center;
+}
+#modal #content p{margin-bottom: 20px;}
+#modal img{width: 400px;display: block;margin: auto;}
+#modal.active{display: block;}
+
+#overlay{
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed; display: none;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh; z-index: 999;
+}
+#overlay.active{
+    display: block;
+}
